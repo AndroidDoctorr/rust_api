@@ -8,5 +8,6 @@ edition = "2021"
 [dependencies]
 rand = "0.8.0"
 warp = "0.3"
+sqlx = { version = "0.5", features = ["runtime-tokio-native-tls", "mssql"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1.0", features = ["derive"] }
